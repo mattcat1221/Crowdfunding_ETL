@@ -32,6 +32,7 @@ Educational
 
 ## Credits
 Casey Matthews 
+Eric Croston
 
 ## License
 MIT
