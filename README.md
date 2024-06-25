@@ -7,6 +7,8 @@
 
 ## Description
 Crowdfunding Analysis. Create the Category and Subcategory DataFrames. Create the Campaign DataFrame. Create the Contacts DataFrame. Create the Crowdfunding Database
+
+
 ![app_image](/Users/cmatthews/Desktop/Data-Analyst/Projects/GROUP PROJECT 2/QuickDBD-Free Diagram.png
 
 
