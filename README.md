@@ -1,4 +1,3 @@
-# Crowdfunding_ETL
 # Crowdfunding_Alaysis
 ![MIT](https://img.shields.io/badge/License-MIT-blue)
 
@@ -8,10 +7,7 @@
 ## Description
 Crowdfunding Analysis. Create the Category and Subcategory DataFrames. Create the Campaign DataFrame. Create the Contacts DataFrame. Create the Crowdfunding Database
 
-
-![app_image](/Users/cmatthews/Desktop/Data-Analyst/Projects/GROUP PROJECT 2/QuickDBD-Free Diagram.png
-
-
+![app_image](/Users/cmatthews/Desktop/Data-Analyst/Projects/GROUP PROJECT 2/QuickDBD-Free Diagram.png)
 
 ## Table of Contents
 - [Installation](#installation)
