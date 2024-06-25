@@ -1,60 +1,34 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/G2LA0G
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+﻿Campaign
+-
+CF_ID varchar PK
+Contact_ID varchar FK - Contacts.Contact_ID
+Company_Name varchar
+Description varchar
+Goal numeric
+Pledged numeric
+Outcome varchar
+Backers_Count int
+Country varchar
+Currency varchar
+Launch_Date date
+End_Date date
+Category_ID varchar FK >- Category.Category_ID
+SubCategory_ID varchar FK >- Subcategory.Subcategory_ID
+
+Contacts
+-
+Contact_ID varchar PK
+First_Name varchar
+Last_Name varchar
+email varchar
+
+Category
+-
+Category_ID varchar PK
+Categories varchar
 
 
-CREATE TABLE `Campaign` (
-    `CF_ID` varchar  NOT NULL ,
-    `Contact_ID` varchar  NOT NULL ,
-    `Company_Name` varchar  NOT NULL ,
-    `Description` varchar  NOT NULL ,
-    `Goal` numeric  NOT NULL ,
-    `Pledged` numeric  NOT NULL ,
-    `Outcome` varchar  NOT NULL ,
-    `Backers_Count` int  NOT NULL ,
-    `Country` varchar  NOT NULL ,
-    `Currency` varchar  NOT NULL ,
-    `Launch_Date` date  NOT NULL ,
-    `End_Date` date  NOT NULL ,
-    `Category_ID` varchar  NOT NULL ,
-    `SubCategory_ID` varchar  NOT NULL ,
-    PRIMARY KEY (
-        `CF_ID`
-    )
-);
-
-CREATE TABLE `Contacts` (
-    `Contact_ID` varchar  NOT NULL ,
-    `First_Name` varchar  NOT NULL ,
-    `Last_Name` varchar  NOT NULL ,
-    `email` varchar  NOT NULL ,
-    PRIMARY KEY (
-        `Contact_ID`
-    )
-);
-
-CREATE TABLE `Category` (
-    `Category_ID` varchar  NOT NULL ,
-    `Categories` varchar  NOT NULL ,
-    PRIMARY KEY (
-        `Category_ID`
-    )
-);
-
-CREATE TABLE `Subcategory` (
-    `Subcategory_ID` varchar  NOT NULL ,
-    `Subcategories` varchar  NOT NULL ,
-    PRIMARY KEY (
-        `Subcategory_ID`
-    )
-);
-
-ALTER TABLE `Campaign` ADD CONSTRAINT `fk_Campaign_Contact_ID` FOREIGN KEY(`Contact_ID`)
-REFERENCES `Contacts` (`Contact_ID`);
-
-ALTER TABLE `Campaign` ADD CONSTRAINT `fk_Campaign_Category_ID` FOREIGN KEY(`Category_ID`)
-REFERENCES `Category` (`Category_ID`);
-
-ALTER TABLE `Campaign` ADD CONSTRAINT `fk_Campaign_SubCategory_ID` FOREIGN KEY(`SubCategory_ID`)
-REFERENCES `Subcategory` (`Subcategory_ID`);
-
+Subcategory
+-
+Subcategory_ID varchar PK
+Subcategories varchar
