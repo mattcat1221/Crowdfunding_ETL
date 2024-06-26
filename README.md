@@ -1,6 +1,6 @@
 # Crowdfunding_Alaysis
 ![MIT](https://img.shields.io/badge/License-MIT-blue)
-
+![Image](file:///Users/cmatthews/Desktop/Data-Analyst/Projects/GROUP%20PROJECT%202/Image%206-24-24%20at%209.07%E2%80%AFPM.png)
 ## Website: 
 [website](https://github.com/mattcat1221/Crowdfunding_ETL/tree/main)
 
