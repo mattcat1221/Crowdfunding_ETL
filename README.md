@@ -30,7 +30,7 @@ pandas, python, Postgre SQL
 Educational
 
 ## Credits
-Casey Matthews 
+Casey Matthews, 
 Eric Croston
 
 ## License
